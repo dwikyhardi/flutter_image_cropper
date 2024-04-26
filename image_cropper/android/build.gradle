@@ -1,4 +1,4 @@
-group 'vn.hunghd.flutter.plugins.imagecropper'
+group 'id.my.dwiky.imagecropper'
 version '1.0-SNAPSHOT'
 
 buildscript {
@@ -9,7 +9,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.6.4'
+        classpath 'com.android.tools.build:gradle:8.3.2'
     }
 }
 
@@ -26,18 +26,19 @@ apply plugin: 'com.android.library'
 android {
     // Conditional for compatibility with AGP <4.2.
     if (project.android.hasProperty("namespace")) {
-        namespace 'vn.hunghd.flutter.plugins.imagecropper'
+        namespace 'id.my.dwiky.imagecropper'
     }
-    compileSdkVersion 31
+    compileSdk 34
 
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 21
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     lintOptions {
         disable 'InvalidPackage'
     }
     dependencies {
-        implementation 'com.github.yalantis:ucrop:2.2.8'
+        implementation 'com.github.dwikyhardi:CropMaster:92d5990eed'
+        implementation 'androidx.appcompat:appcompat:1.6.1'
     }
 }
