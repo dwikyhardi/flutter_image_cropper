@@ -38,7 +38,7 @@ android {
         disable 'InvalidPackage'
     }
     dependencies {
-        implementation 'com.github.dwikyhardi:CropMaster:92d5990eed'
+        implementation 'com.github.dwikyhardi:CropMaster:069fe3d340'
         implementation 'androidx.appcompat:appcompat:1.6.1'
     }
 }
